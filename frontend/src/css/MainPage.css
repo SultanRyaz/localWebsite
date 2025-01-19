@@ -1,0 +1,124 @@
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.game-item {
+  width: 280px;
+  margin: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Добавляем позиционирование для элемента */
+  transition: transform 0.2s ease-in-out; /* Плавная анимация */
+}
+
+.game-item:hover {
+  transform: translateY(-5px); /* Поднимаем карточку при наведении */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Усиливаем тень при наведении */
+}
+
+.game-item h3, .game-item .game-info {
+  padding: 10px;
+  text-align: center;
+}
+.game-item .game-info {
+  border-top: 1px solid #ddd;
+}
+
+.game-item .favorite-button {
+position: absolute; /* Кнопка будет позиционироваться относительно .game-item */
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%); /* центрируем кнопку */
+  padding: 10px 15px;
+  background-color: #393e44;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0; /* Изначально невидимая */
+  transition: opacity 0.3s ease;
+}
+
+.game-item:hover .favorite-button {
+  opacity: 1; /* Показываем кнопку при наведении на игру */
+}
+
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.game-header1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.add-game-button {
+  font-size: 1.5em;
+  cursor: pointer;
+  margin-left: 10px; /* Добавьте отступ слева */
+}
+
+.add-game-form {
+display: flex;
+flex-direction: column;
+max-width: 400px;
+margin-top: 20px;
+}
+
+.add-game-form input, .add-game-form textarea {
+margin-bottom: 10px;
+padding: 8px;
+}
+.add-game-form-buttons {
+display: flex;
+justify-content: flex-end;
+}
+.add-game-form-buttons button {
+margin-left: 5px; /* Добавьте отступ между кнопками */
+cursor: pointer;
+}
+
+/* Добавьте эти стили в ваш CSS файл */
+.game-item {
+  display: flex;
+  flex-direction: column; /* Вертикальная компоновка */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  text-align: center;
+}
+.game-image{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.game-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем контент по горизонтали */
+}
+.game-actions {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px; /* Расстояние от описания до кнопок */
+}
+
+.delete-game-button{
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}

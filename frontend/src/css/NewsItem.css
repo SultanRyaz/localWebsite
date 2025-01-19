@@ -1,0 +1,77 @@
+.news-item {
+    background-color:#161818; /* Белый фон */
+    border: 1px solid #e0e0e0; /* Светло-серая рамка */
+    border-radius: 8px; /* Закругленные углы */
+    padding: 20px; /* Внутренние отступы */
+    margin: 15px; /* Внешние отступы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для объема */
+    transition: transform 0.3s ease; /* Анимация при наведении */
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+.news-item:hover {
+    transform: translateY(-3px); /* Приподнимаем при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Тень увеличивается */
+}
+/* Заголовок новости */
+.news-item h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Отступ снизу */
+    color: #ffffff; /* Темный цвет текста */
+    font-size: 2.5rem; /* Размер шрифта */
+}
+/* Содержимое новости */
+.news-item p {
+    margin-bottom: 8px; /* Отступ снизу */
+    color: #ffffff; /* Серый цвет текста */
+    line-height: 1.6; /* Межстрочный интервал */
+    font-size: 1.3rem;
+}
+/* Изображение новости */
+.news-item img {
+    max-width: 50%;
+    max-height: auto; /* Максимальная высота */
+    object-fit: cover; /* Масштабируем изображение с обрезкой */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    border-radius: 4px; /* Закругленные края */
+    margin: auto;
+}
+.news-item button {
+    padding: 8px 12px; /* Внутренние отступы */
+    margin-right: 5px; /* Отступы справа для нескольких кнопок */
+    border: none; /* Убираем рамку */
+    border-radius: 4px; /* Закругленные углы */
+    color: white; /* Белый текст */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background-color 0.3s ease;
+}
+/* Стилизация ссылок */
+.news-item a {
+    text-decoration: none;
+}
+/* Стилизация для кнопки удаления */
+.button_del {
+    background-color: #393e44; /* Красный фон */
+    margin-right: 0; /* Убираем правый отступ */
+    width: 100%;
+}
+.button_del:hover {
+    background-color: #da190b; /* Темно-красный фон при наведении */
+}
+
+.button_red{
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: #393e44; /* Красный фон */
+}
+
+.button_red:hover{
+    background-color: #0056b3;
+}
+
+.addNews {
+    display: flex;
+    justify-content: space-between;
+}

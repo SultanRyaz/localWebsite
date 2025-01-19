@@ -1,0 +1,81 @@
+/* Общий стиль таблицы */
+  table {
+    width: 100%;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #393e44;
+    border-radius: 12px;
+    overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стилизация заголовков таблицы */
+  thead th {
+    background-color: #393e44;
+    color: #ffffff;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Стилизация строк таблицы */
+  tbody tr {
+    border-bottom: 1px solid #eee;
+      transition: background-color 0.3s ease;
+    color:rgb(255, 255, 255);
+  }
+  tbody tr:hover {
+      background-color: #303438;
+  }
+  /* Стилизация ячеек таблицы */
+  td {
+    padding: 15px;
+    border: 1px solid white;
+  }
+  /* Стилизация ячейки с изображением */
+  td img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+  /* Стилизация кнопок и ссылок */
+  .btn {
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+      cursor: pointer;
+       transition: background-color 0.3s ease;
+  }
+  /* Стилизация основной кнопки */
+  .btn-primary {
+      background-color: #007bff;
+      color: white;
+  }
+  .btn-primary:hover {
+      background-color: #0056b3;
+  }
+  
+  /* Стилизация кнопки удаления */
+  .btn-danger {
+     background-color: #dc3545;
+     color: white;
+  }
+  .btn-danger:hover {
+      background-color: #c82333;
+  }
+  
+  /* Стилизация ячейки с кнопками */
+  td.d-flex.flex-column {
+      display: flex;
+      flex-direction: column;
+  }
+  /* Стилизация для отступов между кнопками */
+  td.d-flex.flex-column.gap-3 {
+      gap: 8px;
+  }

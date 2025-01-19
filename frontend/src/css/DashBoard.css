@@ -1,0 +1,19 @@
+  /* Стилизация кнопок и ссылок */
+  .btn {
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+      cursor: pointer;
+       transition: background-color 0.3s ease;
+  }
+
+  /* Стилизация кнопки удаления */
+  .btn-danger {
+     background-color: #dc3545;
+     color: white;
+  }
+  .btn-danger:hover {
+      background-color: #c82333;
+  }
